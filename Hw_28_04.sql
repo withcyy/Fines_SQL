@@ -1,0 +1,10 @@
+select * from People;
+select * from fines;
+select * from people where personal_id = '12345';
+select * from fines where penalty_type = 'Parking';
+select * from fines where city = 'New York';
+insert into People (personal_id, name) values ('12314', 'Albus');
+insert into fines (personal_id, penalty_type, city, amount) values ('12314', 'Parking', 'Kiev', 100);
+delete from fines where penalty_id = 2;
+update people set name = 'Sergio' where personal_id = '12314';
+update fines set penalty_type = 'Crash', city = 'Uman', amount = 2000 where penalty_id = 4;
